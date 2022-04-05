@@ -2,10 +2,10 @@
 ## 🛠 Under Maintenance: *Blog* + *Full Portfolio Section*
 
 ### 📄 Update Table
-| Update  |  Date |
-| :---: | :---: |
-|  `1.0` | 04/04/2022  |
-|  `?` |  Future Update |
+| Update  |  Date | Content |
+| :---: | :---: | :---: |
+|  `1.0` | 04/04/2022  | First Build |
+|  `?` |  Future Update | Added `?`  |
 
 ### Current Sections
 - Home
