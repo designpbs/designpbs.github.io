@@ -19,32 +19,6 @@ navLinkEls.forEach(navLinkEl => {
     }
 });
 
-/*==================== PORTFOLIO FILTER ====================*/
-const filterButtons = document.querySelectorAll('#filter-list button');
-const filterableProjects = document.querySelectorAll('#project-list .project__item');
-
-const filterProjects = (e) => {
-    document.querySelector('#filter-list .active__filter').classList.remove('active__filter');
-    e.target.classList.add('active__filter');
-
-    filterableProjects.forEach(project__item => {
-        if(project__item.dataset.name === e.target.dataset.filter || e.target.dataset.filter === "all") {
-            return project__item.classList.replace('hidden__project', 'show');
-        }
-
-        project__item.classList.add('hidden__project');
-    });
-}
-
-filterButtons.forEach(button => button.addEventListener("click", filterProjects));
-
-/*==================== RESET ANIMATION ====================*/
-document.querySelectorAll('.filter__button').forEach(e => e.addEventListener('click', () => {
-	document.querySelector(".load--img").style.animation = 'none';
-	document.querySelector(".load--img").offsetWidth;
-	document.querySelector(".load--img").style.animation = '0.9s opacityInAnimation ease-out forwards';
-}));
-
 /*==================== ANIMATION WHEN IN VIEW ====================*/
 const progressBars = document.querySelectorAll('.bar__progress');
 

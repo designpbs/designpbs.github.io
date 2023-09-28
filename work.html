@@ -92,79 +92,182 @@
     <!--==================== MAIN ====================-->
     <main class="main">
         <section class="section">
-            <div class="style__item">
-                <h1 class="load--1">
-                    Work<span class="h1__span">.</span>
-                </h1>
-                <ul class="filter__list load--2" id="filter-list">
-                    <li class="filter__item">
-                        <button class="filter__button active__filter" data-filter="all">All</button>
-                    </li>
-                    <li class="filter__item">
-                        <button class="filter__button" data-filter="ui/ux">UI/UX</button>
-                    </li>
-                    <li class="filter__item">
-                        <button class="filter__button" data-filter="frontend">Frontend</button>
-                    </li>
-                    <li class="filter__item">
-                        <button class="filter__button" data-filter="motion">Motion</button>
-                    </li>
-                    <li class="filter__item">
-                        <button class="filter__button" data-filter="designs">Designs</button>
-                    </li>
-                </ul>
-                <div class="project__grid load--img" id="project-list">
-                    <a class="project__item" data-name="designs">
-                        <img src="/assets/img/PROJ-forest-concept.jpg" alt="">
-                        <div class="project__overlay">
-                            <h2 class="project__title">Forest of Ilynir</h2>
-                            <p class="project__subtitle">Environment concept art for ARPG fantasy game: Away for a While</p>
-                        </div>
-                    </a>
-                    <a class="project__item" data-name="designs">
-                        <img src="/assets/img/PROJ-beginner-concept.jpg" alt="">
-                        <div class="project__overlay">
-                            <h2 class="project__title">Beginner Character</h2>
-                            <p class="project__subtitle">Beginner outfit concept art for ARPG fantasy game: Away for a While</p>
-                        </div>
-                    </a>
-                    <a class="project__item" data-name="designs">
-                        <img src="/assets/img/PROJ-blacksmith.jpg" alt="">
-                        <div class="project__overlay">
-                            <h2 class="project__title">Giant Blacksmith of Durhan</h2>
-                            <p class="project__subtitle">Blacksmith character concept art for ARPG fantasy game: Away for a While</p>
-                        </div>
-                    </a>
-                    <a class="project__item" data-name="designs">
-                        <img src="/assets/img/PROJ-potion-vendor.jpg" alt="">
-                        <div class="project__overlay">
-                            <h2 class="project__title">Potion Seller of Ilynir</h2>
-                            <p class="project__subtitle">Elf character concept art for ARPG fantasy game: Away for a While</p>
-                        </div>
-                    </a>
-                    <a class="project__item" data-name="designs">
-                        <img src="/assets/img/PROJ-slime-monster.jpg" alt="">
-                        <div class="project__overlay">
-                            <h2 class="project__title">Dewdrop Slime</h2>
-                            <p class="project__subtitle">Slime monster concept art for ARPG fantasy game: Away for a While</p>
-                        </div>
-                    </a>
-                    <a class="project__item" data-name="designs">
-                        <img src="/assets/img/PROJ-stone-golem.jpg" alt="">
-                        <div class="project__overlay">
-                            <h2 class="project__title">Ancient Stone Golem</h2>
-                            <p class="project__subtitle">Golem monster concept art for ARPG fantasy game: Away for a While</p>
-                        </div>
-                    </a>
+            <h1 class="load--1">
+                Work<span class="h1__span">.</span>
+            </h1>
+            <div class="filter-button-group load--2">
+                <div class="filter-item">
+                    <button data-filter="*" class="filter-btn active">All</button>
                 </div>
-                <a href="#" class="return__top load--img">
-                    Return to top
-                    <svg class="arrow arrow--bounce" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.8255 9.32598C6.60338 8.56264 7.84923 8.56265 8.62711 9.32598L13.2725 13.8845C13.6721 14.2767 13.6721 14.9204 13.2725 15.3126C12.8834 15.6944 12.2603 15.6944 11.8712 15.3126L8.62711 12.1291C7.84922 11.3658 6.60338 11.3658 5.8255 12.1291L2.58141 15.3126C2.19232 15.6944 1.56917 15.6944 1.18008 15.3126C0.780468 14.9204 0.780468 14.2767 1.18008 13.8845L5.8255 9.32598Z" fill="currentColor"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M5.8255 1.3977C6.60338 0.634361 7.84923 0.634362 8.62711 1.3977L13.2725 5.95625C13.6721 6.34839 13.6721 6.99214 13.2725 7.38428C12.8834 7.76609 12.2603 7.76609 11.8712 7.38428L8.62711 4.20085C7.84922 3.43751 6.60338 3.43751 5.8255 4.20085L2.58141 7.38428C2.19232 7.76609 1.56917 7.76609 1.18008 7.38428C0.780468 6.99214 0.780468 6.34839 1.18008 5.95624L5.8255 1.3977Z" fill="currentColor"/>
-                    </svg>
-                </a>
+                <div class="filter-item">
+                    <button data-filter=".category1" class="filter-btn">UI/UX</button>
+                </div>
+                <div class="filter-item">
+                    <button data-filter=".category2" class="filter-btn">Designs</button>
+                </div>
+                <div class="filter-item">
+                    <button data-filter=".category3" class="filter-btn">Motion</button>
+                </div>
+                <div class="filter-item">
+                    <button data-filter=".category4" class="filter-btn">Artwork</button>
+                </div>
             </div>
+            <div class="grid load--img">
+                <div class="grid-item filter-item category3">
+                    <img src="/assets/img/proj-mo-beginnerpxart.gif" alt="Image 1">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Player Character Animation</h2>
+                        <p class="project__subtitle">Beginner character pixel art animation for ARPG fantasy game: Away for a While</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category4">
+                    <img src="/assets/img/proj-aw-beginnerafaw.jpg" alt="Image 2">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Beginner Character</h2>
+                        <p class="project__subtitle">Beginner outfit concept art for ARPG fantasy game: Away for a While</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category4">
+                    <img src="/assets/img/proj-aw-forestafaw.jpg" alt="Image 3">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Forest of Ilynir</h2>
+                        <p class="project__subtitle">Environment concept art for ARPG fantasy game: Away for a While</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category4">
+                    <img src="/assets/img/proj-aw-potionvendorafaw.jpg" alt="Image 4">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Potion Seller of Ilynir</h2>
+                        <p class="project__subtitle">Elf character concept art for ARPG fantasy game: Away for a While</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category4">
+                    <img src="/assets/img/proj-aw-blacksmithafaw.jpg" alt="Image 5">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Giant Blacksmith of Durhan</h2>
+                        <p class="project__subtitle">Blacksmith character concept art for ARPG fantasy game: Away for a While</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category4">
+                    <img src="/assets/img/proj-aw-slimeafaw.jpg" alt="Image 6">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Dewdrop Slime</h2>
+                        <p class="project__subtitle">Slime monster concept art for ARPG fantasy game: Away for a While</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category4">
+                    <img src="/assets/img/proj-aw-golemafaw.jpg" alt="Image 7">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Ancient Stone Golem</h2>
+                        <p class="project__subtitle">Golem monster concept art for ARPG fantasy game: Away for a While</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category4">
+                    <img src="/assets/img/proj-aw-louiefrouie.jpg" alt="Image 8">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Louie's Portrait</h2>
+                        <p class="project__subtitle">Art commission of a cute white pekingese dog</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category1">
+                    <img src="/assets/img/proj-web-archvoid.gif" alt="Image 9">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Archvoid</h2>
+                        <p class="project__subtitle">Fictional architecture website landing page</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category3">
+                    <img src="/assets/img/proj-mo-gameboy.gif" alt="Image 10">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Gameboy Animation</h2>
+                        <p class="project__subtitle">University motion project about the videogame console: Gameboy Advanced</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category3">
+                    <img src="/assets/img/proj-mo-jk.gif" alt="Image 11">
+                    <div class="project__overlay">
+                        <h2 class="project__title">JK Opening</h2>
+                        <p class="project__subtitle">Opening animation for an online marketing course</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category3">
+                    <img src="/assets/img/proj-mo-veka.gif" alt="Image 12">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Veka</h2>
+                        <p class="project__subtitle">Simple motion animation for Veka</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category3">
+                    <img src="/assets/img/proj-mo-jardcamp.gif" alt="Image 13">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Jardim Campeche</h2>
+                        <p class="project__subtitle">Simple motion animation for the beautiful housing area in Campeche</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category3">
+                    <img src="/assets/img/proj-mo-dicafamilia.gif" alt="Image 14">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Restaurante Família</h2>
+                        <p class="project__subtitle">Simple motion animation for a series of cooking related reels for the Família Restaurant</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category4">
+                    <img src="/assets/img/proj-aw-bearedit.jpg" alt="Image 15">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Colossal Bear</h2>
+                        <p class="project__subtitle">Image editing artwork - Scale Practice</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category2">
+                    <img src="/assets/img/proj-de-amarone-label.jpg" alt="Image 16">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Amarone Brasilis</h2>
+                        <p class="project__subtitle">Label design for a rustic Brazilian wine with an Italian heritage</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category2">
+                    <img src="/assets/img/proj-de-pegueatempo-label.jpg" alt="Image 17">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Pegue a Tempo</h2>
+                        <p class="project__subtitle">Cover design for a tabletop game</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category2">
+                    <img src="/assets/img/proj-de-santannaesilva-logo.jpg" alt="Image 18">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Santanna e Silva</h2>
+                        <p class="project__subtitle">Logo design</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category2">
+                    <img src="/assets/img/proj-de-bdecor-logo.jpg" alt="Image 19">
+                    <div class="project__overlay">
+                        <h2 class="project__title">BDecor</h2>
+                        <p class="project__subtitle">Logo design</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category2">
+                    <img src="/assets/img/proj-de-geizibarcelos-logo.jpg" alt="Image 20">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Geizi Barcelos</h2>
+                        <p class="project__subtitle">Logo design</p>
+                    </div>
+                </div>
+                <div class="grid-item filter-item category2">
+                    <img src="/assets/img/proj-de-designpbs-logo.jpg" alt="Image 21">
+                    <div class="project__overlay">
+                        <h2 class="project__title">Design.pbs</h2>
+                        <p class="project__subtitle">Thank you for visiting my website!</p>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="return__top load--img">
+                Return to top
+                <svg class="arrow arrow--bounce" viewBox="0 0 14 16" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.8255 9.32598C6.60338 8.56264 7.84923 8.56265 8.62711 9.32598L13.2725 13.8845C13.6721 14.2767 13.6721 14.9204 13.2725 15.3126C12.8834 15.6944 12.2603 15.6944 11.8712 15.3126L8.62711 12.1291C7.84922 11.3658 6.60338 11.3658 5.8255 12.1291L2.58141 15.3126C2.19232 15.6944 1.56917 15.6944 1.18008 15.3126C0.780468 14.9204 0.780468 14.2767 1.18008 13.8845L5.8255 9.32598Z" fill="currentColor"/>
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5.8255 1.3977C6.60338 0.634361 7.84923 0.634362 8.62711 1.3977L13.2725 5.95625C13.6721 6.34839 13.6721 6.99214 13.2725 7.38428C12.8834 7.76609 12.2603 7.76609 11.8712 7.38428L8.62711 4.20085C7.84922 3.43751 6.60338 3.43751 5.8255 4.20085L2.58141 7.38428C2.19232 7.76609 1.56917 7.76609 1.18008 7.38428C0.780468 6.99214 0.780468 6.34839 1.18008 5.95624L5.8255 1.3977Z" fill="currentColor"/>
+                </svg>
+            </a>
         </section>
     </main>
 
@@ -213,5 +316,33 @@
 
     <!--==================== JS ====================-->
     <script src="/assets/js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>    
+    <script>
+        $(document).ready(function () {
+            // Initialize Isotope with Masonry layout
+            var $grid = $('.grid').isotope({
+                itemSelector: '.grid-item',
+                layoutMode: 'masonry',
+            });
+
+            // Filter buttons functionality
+            $('.filter-button-group').on('click', 'button', function () {
+                var filterValue = $(this).attr('data-filter');
+                $grid.isotope({ filter: filterValue });
+
+            // Remove the "active" class from all buttons and add it to the clicked button
+                $('.filter-button-group button').removeClass('active');
+                $(this).addClass('active');
+            });
+
+            // Initialize Masonry layout after all images are loaded
+            $('.grid').imagesLoaded(function () {
+                $grid.isotope('layout');
+            });
+        });
+    </script>
 </body>
 </html>

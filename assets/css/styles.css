@@ -342,21 +342,23 @@ img {
 }
 
 /*========== WORK ==========*/
-.filter__list {
+.filter-button-group {
     display: flex;
     align-self: stretch;
     justify-content: space-between;
     overflow-x: auto;
     overflow-y: hidden;
     height: 6.5em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
 }
 
-.filter__item {
+.filter-item {
     display: flex;
     align-items: center;
 }
 
-.filter__button {
+.filter-btn {
     cursor: pointer;
     font-size: var(--normal-font-size);
     font-weight: var(--normal-weight-font);
@@ -369,38 +371,29 @@ img {
     transition: padding .3s ease-out;
 }
 
-.active__filter {
+.filter-button-group button.active {
     border: .15em solid #1098f7;
     border-radius: 30em;
     padding: .1em 1em;
 }
 
-.project__grid {
-    grid-column-gap: 2em;
-    grid-row-gap: 2em;
-    grid-template-rows: auto auto;
-    grid-template-columns: auto auto;
-    grid-auto-columns: auto;
-    align-items: center;
-    justify-items: center;
-    display: grid;
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -1em;
 }
 
-.project__item {
+.grid-item {
+    width: calc(50% - 2em);
+    margin: 1em;
+    overflow: hidden; /* Hide any overflowing content */
+    position: relative;
     border-radius: 1.5em;
-    padding-top: 0;
-    padding-bottom: 0;
-    position: relative;
-    overflow: hidden;
 }
 
-.hidden__project {
-    display: none;
-}
-
-.project__image {
-    object-fit: cover;
-    position: relative;
+.grid-item img {
+    height: auto;
+    display: block; /* Prevent any unwanted inline gaps */
 }
 
 .project__overlay {
@@ -839,6 +832,9 @@ textarea::-webkit-scrollbar {
         grid-template-columns: auto;
     }
     /*========== WORK ==========*/
+    .grid-item {
+        width: calc(100% - 2em);
+    }
 
     .filter__list {
         overflow-x: scroll;
